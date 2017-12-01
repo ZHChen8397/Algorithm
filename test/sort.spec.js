@@ -44,7 +44,7 @@ describe('insertion sort', () => {
   })
 })
 
-describe.only('quick sort', () => {
+describe('quick sort ', () => {
   it('should be sorted by quick sort',() => {
     let sort = new sorting()
     let data = [7,3,5,1,2]
@@ -72,3 +72,5 @@ describe.only('quick sort', () => {
     assert.deepEqual(data,[1,1,2,5,7])
   })
 })
+
+

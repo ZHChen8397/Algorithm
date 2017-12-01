@@ -20,6 +20,7 @@ module.exports = class sorting{
     return data
   }
 
+
   quickSort(data, left ,right){
     if(left < right){
       let i = left

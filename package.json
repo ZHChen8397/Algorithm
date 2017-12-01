@@ -1,0 +1,25 @@
+{
+  "name": "algorithm",
+  "version": "1.0.0",
+  "description": "algorithm practice",
+  "main": "algotirhm.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZHChen8397/Algorithm.git"
+  },
+  "author": "ZHChen8397",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZHChen8397/Algorithm/issues"
+  },
+  "homepage": "https://github.com/ZHChen8397/Algorithm#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.12.1",
+    "mocha": "^4.0.1"
+  }
+}

@@ -21,14 +21,26 @@ module.exports = class sorting{
   }
 
   quickSort(data, left ,right){
-    
+    if(left < right){
+      let i = left
+      let j = right + 1
+      while(true){
+        while(i + 1 < data.length && data[++i] < data[left]) ; // find from left to right
+        while(j - 1 > -1 && data[--j] > data[left]) ; // find from right to left
+        if(i >= j) break
+        swap(data,i,j)
+      }
+      swap(data,left,j) // move pivot to center
+      this.quickSort(data, left, j - 1)
+      this.quickSort(data, j + 1, right)
+    }
   }
 
   insertionSort(data){
     let j
     for(let i = 0 ; i < data.length ; i++){
       let temp = data[i]
-      for(j = i ; j > 0 && temp < data[j-1] ; j--){
+      for(j = i ; j > 0 && temp <= data[j-1] ; j--){
         data[j] = data[j-1]
       }
       data[j] = temp
@@ -45,7 +57,7 @@ var merge = function(leftData,rightData){
   for(let i = 0 ; i < leftData.length + rightData.length ; i++){
     if(leftIndex === leftData.length) sortedData.push(rightData[rightIndex++])
     else if(rightIndex === rightData.length) sortedData.push(leftData[leftIndex++])
-    else if(leftData[leftIndex] < rightData[rightIndex]){
+    else if(leftData[leftIndex] <= rightData[rightIndex]){
       sortedData.push(leftData[leftIndex++])
     }
     else if(leftData[leftIndex] > rightData[rightIndex]){
@@ -53,4 +65,10 @@ var merge = function(leftData,rightData){
     }
   }
   return sortedData
+}
+
+var swap = function(data, left, right){
+  let temp = data[left]
+  data[left] = data[right]
+  data[right] = temp
 }

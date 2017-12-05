@@ -1,6 +1,6 @@
 {
   "name": "algorithm_practice",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "algorithm practice",
   "main": "algotirhm.js",
   "scripts": {

@@ -2,7 +2,7 @@
   "name": "algorithm_practice",
   "version": "1.0.5",
   "description": "algorithm practice",
-  "main": "algotirhm.js",
+  "main": "algorithm.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register test/*.spec.js"
   },

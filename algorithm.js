@@ -19,7 +19,7 @@ module.exports = class Algorithm{
   }
 
   quickSelect(data,k){
-    select.quickSelect(data,k)
+    return select.quickSelect(data,k)
   }
   
 }

@@ -11,6 +11,9 @@ This is an algorithm practice project.
 Dec 8. update:
 new algorithm: quickSelect
 
+Dec 9. update:
+new algorithm: medianOf2SortedArray
+
 
 ##### The algorithm only support for numbers. 
 
@@ -31,7 +34,7 @@ new algorithm: quickSelect
 
 ##### quickSort
 
-	sort.quickSort(data) // data will be sorted because of called by reference
+	alg.quickSort(data) // data will be sorted because of called by reference
 
 ##### insertionSort
 
@@ -41,3 +44,6 @@ new algorithm: quickSelect
 
 	let result = alg.quickSelect(data,k) // k means select the kth smallest from data
 	
+##### medianOf2SortedArray
+
+	let result = alg.medianOf2SortedArray(data1,data2) //note that the length of two data must be the same

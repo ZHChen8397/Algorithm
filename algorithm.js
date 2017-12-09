@@ -1,7 +1,8 @@
 var sorting = require('./sorting')
-var select = require('./select')
+var selecting = require('./select')
 module.exports = class Algorithm{
   constructor(){
+    this.select = new selecting()
     this.sort = new sorting()
     this.resultData
   }
@@ -19,7 +20,7 @@ module.exports = class Algorithm{
   }
 
   quickSelect(data,k){
-    return select.quickSelect(data,k)
+    return this.select.quickSelect(data,k)
   }
   
 }

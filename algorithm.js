@@ -22,5 +22,9 @@ module.exports = class Algorithm{
   quickSelect(data,k){
     return this.select.quickSelect(data,k)
   }
+
+  medianOf2SortedArray(data1,data2){
+    return this.select.medianOf2SortedArray(data1,data2)
+  }
   
 }

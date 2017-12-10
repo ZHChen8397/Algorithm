@@ -14,6 +14,9 @@ new algorithm: quickSelect
 Dec 9. update:
 new algorithm: medianOf2SortedArray
 
+Dec 10. update:
+new algorithm: counting sort
+
 
 ##### The algorithm only support for numbers. 
 
@@ -47,3 +50,7 @@ new algorithm: medianOf2SortedArray
 ##### medianOf2SortedArray
 
 	let result = alg.medianOf2SortedArray(data1,data2) //note that the length of two data must be the same
+
+##### countingSort
+
+	let result = alg.countingSort(data) // data must be positive numbers

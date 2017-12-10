@@ -16,7 +16,7 @@ describe('quick select',function(){
   })
 })
 
-describe.only('median of two sorted array',function(){
+describe('median of two sorted array',function(){
   it('should find median when give two sorted odd array with length n' , function(){
     let data1 =[1,12,15,26,38]
     let data2 =[2,13,17,30,45]

@@ -65,4 +65,10 @@ describe('quick sort ', () => {
   })
 })
 
-
+describe('counting sort',function(){
+  it('should be sorted by counting sort',function(){
+    let data = [7,3,1,6,6,3,2]
+    let result = sort.countingSort(data)
+    assert.deepEqual(result,[1,2,3,3,6,6,7])
+  })
+})

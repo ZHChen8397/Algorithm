@@ -48,6 +48,26 @@ module.exports = class sorting{
     }
     return data
   }
+
+  countingSort(data){
+    let min = findMin(data)
+    let max = findMax(data)
+    let length = data.length
+    let countArray = new Array()
+    let resultArray = new Array()
+    for(var i = 0; i < length; i++){
+      if(isNaN(countArray[data[i]])) countArray[data[i]] = 1
+      else countArray[data[i]] += 1
+    }
+    let index = 0
+    for(var i = 0; i < countArray.length; i++){
+      while(!isNaN(countArray[i])&& countArray[i]!= 0){
+        resultArray[index++] = i
+        countArray[i] --
+      }
+    }
+    return resultArray
+  }
 }
 
 
@@ -72,4 +92,16 @@ var swap = function(data, left, right){
   let temp = data[left]
   data[left] = data[right]
   data[right] = temp
+}
+
+var findMin = function(data){
+  return data.reduce(function(a,b){
+    return Math.min(a,b)
+  })
+}
+
+var findMax = function(data){
+  return data.reduce(function(a,b){
+    return Math.max(a,b)
+  })
 }
